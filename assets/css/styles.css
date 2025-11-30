@@ -4,7 +4,59 @@
     --accent-color: #ff3400;
     --heading-color: #1b0760;
     --body-color: #918ca4;
-    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family: Inter,'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-size-base: 16px;
-    --spacing-unit: 8px;
+    --spacing-unit: 8px; 
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: 2.4rem; /* 16px */
+    line-height: 1.6; 
+    color: var(--body-color);
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1,h2,h3{
+    color: var(--heading-color);
+}
+
+h1{
+    font-size: 7rem;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+h3{
+    font-size: 3rem;
+    margin-bottom: calc(var(--spacing-unit) * 1);
+}
+
+@media  screen and (min-width:1024px) {
+    body{
+        font-size: 1.8rem; /* 18px */
+    }
+
+    h1{
+        font-size: 8rem;
+    }
+    
+    h2{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-size: 2.4rem;
+    }
 }
