@@ -10,6 +10,10 @@
     --spacing-unit: 8px; 
 }
 
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
 /* Typography Styles */
 html{
     font-size: 62.5%; /* 1rem = 10px */
@@ -141,6 +145,74 @@ a{
     background-color: #f3f9fa;
     /* padding: 10px; */
 }
+
+/* Buttons */
+.btn{
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover{
+    background-color: #1a5fb8;
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+.btn-secondary:hover{
+    background-color: #00a3b8;
+}
+
+.btn-accent{
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.btn-accent:hover{
+    background-color: #cc2e00;
+}
+
+.btn-outline{
+    background-color: white;
+    border: 2px solid var(--heading-color);
+    color: var(--heading-color);
+}
+
+.btn-outline:hover{
+    background-color: var(--heading-color);
+    color: #ffffff;
+}
+
+.btn-block{
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
 /* Responsive styles */
 @media  screen and (min-width:1024px) {
     body{
@@ -173,5 +245,10 @@ a{
 
     .list-ticked .list-item{
         padding-left: 0;
+    }
+
+    .btn{
+        font-size: 1.8rem;
+        padding: 1.5rem 2.5rem;
     }
 }
