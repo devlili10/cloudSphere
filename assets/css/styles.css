@@ -1,3 +1,4 @@
+/* Variables */
 :root{
     --primary-color: #2584ff;
     --secondary-color: #00d9ff;
@@ -9,6 +10,7 @@
     --spacing-unit: 8px; 
 }
 
+/* Typography Styles */
 html{
     font-size: 62.5%; /* 1rem = 10px */
     scroll-behavior: smooth;
@@ -43,6 +45,30 @@ h3{
     margin-bottom: calc(var(--spacing-unit) * 1);
 }
 
+
+/* Links */
+a{
+    text-decoration: none;
+}
+
+.link-arrow{
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after{
+    content: ' ->';
+    margin-left: 5px;
+    transition: margin-left 0.15s ease
+}
+
+.link-arrow:hover::after{
+    margin-left: 10px
+}
+
+/* Responsive styles */
 @media  screen and (min-width:1024px) {
     body{
         font-size: 1.8rem; /* 18px */
@@ -58,5 +84,9 @@ h3{
 
     h3{
         font-size: 2.4rem;
+    }
+
+    .link-arrow{
+        font-size: 1.5rem
     }
 }
