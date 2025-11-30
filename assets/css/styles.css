@@ -93,6 +93,33 @@ a{
     color: #ffffff;
 }
 
+/* Lists */
+.list{
+    list-style-type: none;
+    padding-left: calc(var(--spacing-unit) * 4);
+    margin: 0 0 calc(var(--spacing-unit) * 2) 0;
+    color: var(--heading-color);
+}
+
+.list-inline .list-item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+/* .list-ticked .list-item::before{
+    content: '✓ ';
+    color: var(--accent-color);
+    font-weight: bold;
+} */
+
+.list-ticked{
+    list-style-image: url(../icons/tick.svg);
+}
+
+.list-ticked .list-item{
+    padding-left: calc(var(--spacing-unit) * 1);
+    margin-bottom: 1rem;
+}
 /* Responsive styles */
 @media  screen and (min-width:1024px) {
     body{
@@ -121,5 +148,9 @@ a{
 
     .badge-small{
         font-size: 1.2rem;
+    }
+
+    .list-ticked .list-item{
+        padding-left: 0;
     }
 }
