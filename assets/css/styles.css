@@ -11,6 +11,8 @@
     --border-color: #ccc;
     --border-radius: 30px;
     --body-darker-color: #5c5577;
+    --btn-accent-hover: #cc2e00;
+    --btn-primary-hover: #1a5fb8
 }
 
 *,
@@ -134,8 +136,17 @@ a {
     height: 40px;
 }
 
+.icon-small{
+    width: 30px;
+    height: 30px;
+}
+
 .icon-primary {
     fill: var(--primary-color);
+}
+
+.icon-white {
+    fill: #fff;
 }
 
 .icon-container {
@@ -147,6 +158,10 @@ a {
     border-radius: 50%;
     background-color: #f3f9fa;
     /* padding: 10px; */
+}
+
+.icon-container-accent{
+    background-color: var(--accent-color);
 }
 
 /* Buttons */
@@ -172,7 +187,7 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: #1a5fb8;
+    background-color: var(--btn-primary-hover);
 }
 
 .btn-secondary {
@@ -190,7 +205,7 @@ a {
 }
 
 .btn-accent:hover {
-    background-color: #cc2e00;
+    background-color: var(--btn-accent-hover);
 }
 
 .btn-outline {
@@ -444,12 +459,40 @@ a {
 }
 
 
+/* Testimonials */
+.testimonial{
+    padding: 3rem
+}
+
+.testimonial-image{
+    position: relative;
+}
+
+.testimonial-image > img{
+    width: 100%;
+}
+
+.testimonial-image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
 
 
 
 @media screen and (min-width:768px) {
     .grid-cols-2{
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial .quote,
+    .testimonial .quote-author,
+    .testimonial .quote-organization{
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote{
+        margin-left: 6rem;
     }
 }
 
