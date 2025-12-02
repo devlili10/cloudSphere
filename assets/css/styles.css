@@ -439,11 +439,19 @@ a {
     margin-bottom: 10px;
 }
 
+.grid{
+    display: grid;
+}
 
 
 
 
 
+@media screen and (min-width:768px) {
+    .grid-cols-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 /* Responsive styles */
@@ -533,5 +541,10 @@ a {
 
     .quote-organization {
         font-size: 1.8rem;
+    }
+
+        .grid-clos-3{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
