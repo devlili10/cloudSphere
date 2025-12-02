@@ -112,12 +112,6 @@ a{
     margin-right: 2rem;
 }
 
-/* .list-ticked .list-item::before{
-    content: '✓ ';
-    color: var(--accent-color);
-    font-weight: bold;
-} */
-
 .list-ticked{
     list-style-image: url(../icons/tick.svg);
 }
@@ -383,6 +377,22 @@ a{
   right: 5%;
 }
 
+/* Media */
+.media{
+    display: flex;
+}
+
+.media-title{
+    margin-top: 0;
+}
+
+.media-body{
+    margin-left: calc(var(--spacing-unit) * 3);
+}
+
+.media-image{
+    margin-top: 1rem;
+}
 
 
 
