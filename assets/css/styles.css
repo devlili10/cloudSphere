@@ -522,9 +522,21 @@ a {
 }
 
 .collapsible-chevron{
+    transform: rotate(-90deg);
     
 }
 
+.collasible-content{
+    display: none;
+}
+
+.collapsible-expended{
+    transform: rotate(0);
+}
+
+.collapsible-expended .collasible-content{
+    display: block;
+}
 
 
 @media screen and (min-width:768px) {
