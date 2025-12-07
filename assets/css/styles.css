@@ -160,6 +160,18 @@ a {
     /* padding: 10px; */
 }
 
+.icon-container-black{
+    background-color: var(--heading-color);
+    color: white;
+}
+
+.icon-small{
+    width: 40px;
+    height: 40px;
+}
+
+
+
 .icon-container-accent{
     background-color: var(--accent-color);
 }
@@ -521,21 +533,27 @@ a {
     font-size: 3rem;
 }
 
-.collapsible-chevron{
-    transform: rotate(-90deg);
-    
-}
+
 
 .collasible-content{
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
 }
 
-.collapsible-expended{
+.collapsible-chevron{
     transform: rotate(0);
+    transition: transform 0.3s ease;
 }
 
 .collapsible-expended .collasible-content{
-    display: block;
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.collapsible-expended .collapsible-chevron{
+    transform: rotate(90deg);
 }
 
 
