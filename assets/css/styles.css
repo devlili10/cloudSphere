@@ -43,6 +43,7 @@ h1,
 h2,
 h3 {
     color: var(--heading-color);
+    line-height: 1.1;
 }
 
 h1 {
@@ -66,6 +67,10 @@ a {
     text-decoration: none;
 }
 
+.hero-image{
+    width: 100%;
+}
+
 .link-arrow {
     color: var(--accent-color);
     text-transform: uppercase;
@@ -81,6 +86,14 @@ a {
 
 .link-arrow:hover::after {
     margin-left: 10px
+}
+
+/* Hero */
+.hero-tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin-bottom: calc(var(--spacing-unit) * 4);
 }
 
 /* Badges styles */
@@ -797,5 +810,14 @@ a {
         .grid-clos-3{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+    }
+
+    .hero-content{
+        text-align: left;
+        align-self: center;
+    }
+
+    .hero{
+        padding-top: 0;
     }
 }
