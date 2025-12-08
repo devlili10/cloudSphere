@@ -206,6 +206,13 @@ a {
     white-space: nowrap;
 }
 
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
 .btn-stretched{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -281,7 +288,7 @@ a {
     box-shadow: none;
     flex: 1;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -656,6 +663,25 @@ a {
     transform: translateY(5px);
 }
 
+/* Domain block */
+.block-domain .input-group{
+    box-shadow: 0 0  30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.domain-prices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 
 
 
@@ -715,6 +741,10 @@ a {
     .nav-item{
         border: 0;
     }
+
+    .domain-prices{
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    }
 }
 
 
@@ -743,6 +773,7 @@ a {
 
     .badge {
         font-size: 1.5rem;
+        align-self: center;
     }
 
     .badge-small {
