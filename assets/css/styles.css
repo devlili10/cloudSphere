@@ -708,6 +708,24 @@ a {
     margin: 0 auto;
 }
 
+/* Features */
+.feaure{
+    gap: 4rem 2rem;
+}
+.feature-heading{
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.feauture-heading{
+    margin: 1rem 0;
+}
+article img{
+    width: 100%;
+}
+
 
 
 
@@ -773,6 +791,10 @@ a {
 
     .block-plans .grid{
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+
+    .feature:nth-of-type(even) .feature-content  {
+        order: 2;
     }
 }
 
