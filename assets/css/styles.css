@@ -606,10 +606,10 @@ a {
 
 /* Blocks */
 
-.block {
+/* .block {
     --padding-vertical: 5rem;
     padding: var(--padding-vertical) 2rem;
-}
+} */
 
 .block__header {
     text-align: center;
@@ -715,6 +715,10 @@ a {
 .block-plans .grid {
     gap: 8rem 4rem;
 }
+
+/* .block-plans{
+    padding-top: 0;
+} */
 
 .block-plans .card {
     max-width: 500px;
