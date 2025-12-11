@@ -602,14 +602,16 @@ a {
 
 
 
-
+.clear + section {
+    margin-top: -10rem;
+}
 
 /* Blocks */
 
-/* .block {
+.block {
     --padding-vertical: 5rem;
     padding: var(--padding-vertical) 2rem;
-} */
+}
 
 .block__header {
     text-align: center;
