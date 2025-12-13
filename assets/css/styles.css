@@ -135,7 +135,7 @@ a {
 }
 
 .list-ticked {
-    list-style-image: url(../icons/tick.svg);
+    list-style-image: url(../images/sprite.svg#tick.svg);
 }
 
 .list-ticked .list-item {
